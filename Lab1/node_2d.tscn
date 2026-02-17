@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dwyvfot3j5ltp"]
+
+[ext_resource type="Texture2D" uid="uid://6fnmq1jvqslo" path="res://assets/linux-distribution-operating-systems-ubuntu-linux-kernel-linux-thumbnail.jpg" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://dfm5bb4k3fu3p" path="res://assets/554-5542906_linux-penguin-png-linux-penguin-tux-transparent-png.png" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://dwlgmaotq42ak" path="res://tree.tscn" id="3_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=1436922952]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=404216958]
+offset_right = 58.0
+offset_bottom = 40.0
+color = Color(0.047058824, 0.68235296, 1, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=2137585392]
+offset_top = 34.0
+offset_right = 58.0
+offset_bottom = 40.0
+color = Color(0.34901962, 1, 0.32941177, 1)
+
+[node name="LinuxDistributionOperatingSystemsUbuntuLinuxKernelLinuxThumbnail" type="Sprite2D" parent="." unique_id=107264628]
+position = Vector2(19, 31.000002)
+scale = Vector2(0.021666666, 0.02401138)
+texture = ExtResource("1_0e48y")
+
+[node name="5545542906LinuxPenguinPngLinuxPenguinTuxTransparentPng" type="Sprite2D" parent="." unique_id=1333883704]
+position = Vector2(44, 27)
+scale = Vector2(0.008720931, 0.009654509)
+texture = ExtResource("2_epypp")
+
+[node name="rock" type="ColorRect" parent="." unique_id=2072821022]
+offset_left = 39.0
+offset_top = 30.0
+offset_right = 50.0
+offset_bottom = 35.0
+color = Color(0.7135227, 0.7135227, 0.7135227, 1)
+
+[node name="ColorRect" type="ColorRect" parent="rock" unique_id=2058382479]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 10.0
+offset_bottom = 5.0
+color = Color(0.37602848, 0.37602848, 0.37602845, 1)
+
+[node name="Tree" parent="." unique_id=1460983532 instance=ExtResource("3_epypp")]
+position = Vector2(-1, 16)
+
+[node name="Tree2" parent="." unique_id=81776871 instance=ExtResource("3_epypp")]
+position = Vector2(21, 16)
