@@ -7,13 +7,13 @@ func _ready():
 	
 func _process(delta):
 	if Input.is_action_pressed("ui_right"):
-		position.x += delta + 5
+		position.x += delta + speed
 	if Input.is_action_pressed("ui_left"):
-		position.x -= delta + 5
+		position.x -= delta + speed
 	if Input.is_action_pressed("ui_up"):
-		position.y -= delta + 5
+		position.y -= delta + speed
 	if Input.is_action_pressed("ui_down"):
-		position.y += delta + 5
+		position.y += delta + speed
 		
 	if Input.is_action_just_pressed("ui_accept"):
 		color = Color(255, 0, 0)
